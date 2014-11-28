@@ -1,0 +1,85 @@
+<div>
+    <div class="schedule row cyan">
+        <div class="small-3 column scheduleImg">
+            <img src="assets/scheduleActive.png" />
+        </div>
+        <div class="small-9 column scheduleTitle oneLine">
+            <b>{{rule.title | capitalize}}</b>
+        </div>
+    </div>
+        <div class="row input">
+            <div class="small-4 column text-center clockEnd">
+                <b>BEGIN:</b>
+                <img src="assets/clock.png" />
+            </div>
+            <div class="small-8 column">
+                <div class="timeGroup" func="openStartTimeModal()" focus-time add-click-attr>
+                    <div class="hh timeBar column">
+                        <span>{{start.hh}}</span>
+                    </div>
+                    <div class="mm timeBar column">
+                        <span>{{start.mm}}</span>
+                    </div>
+                    <div class="ampm timeBar column" ng-class="start.ampm">
+                        <span>{{start.ampm}}</span>
+                    </div>
+                </div>
+                <input type="time" class="hideThisFarAway"
+                       ng-model="newStart" ng-change="setStart()">
+            </div>
+        </div>
+        <div class="row input">
+            <div class="small-4 text-center column clockEnd">
+                <b>END:</b>
+                <img src="assets/clock.png" />
+            </div>
+            <div class="small-8 column" func="openEndTimeModal()" add-click-attr focus-time>
+                <div class="timeGroup">
+                    <div class="hh timeBar column">
+                        <span>{{end.hh}}</span>
+                    </div>
+                    <div class="mm timeBar column">
+                        <span>{{end.mm}}</span>
+                    </div>
+                    <div class="ampm timeBar column" ng-class="end.ampm">
+                        <span>{{end.ampm}}</span>
+                    </div>
+                </div>
+                <input type="time"
+                       ng-model="newEnd" ng-change="setEnd()"
+                       class="hideThisFarAway">
+            </div>
+        </div>
+        <div class="row days"
+             days="rule.schedule.days"
+             day-selector></div>
+        <div class="row weeklyRow">
+                <div  class="left weekly"
+                      ng-model="rule.schedule.weekly"
+                      ng-class="rule.schedule.weekly? 'active': 'disabled';"
+                      btn-checkbox>
+                    <div class="innerCircle"></div>
+                </div>
+           <div class="weeklyText"> Repeat Weekly</div>
+        </div>
+        <div class="row disclaim">
+            <div class="disclaimRadio"
+                 ng-model="disclaimer"
+                 ng-class="disclaimer? 'active': 'disabled';"
+                 btn-checkbox>
+                <div class="innerCircle"></div>
+            </div>
+            <div class="right disclaimText">
+               <p><b class="exclaim">!</b><b>IMPORTANT</b> By selecting this, you are agreeing to the terms and conditions of this profile provisioning app contained in this <b>TERMS AND CONDITIONS</b> document</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 expanded column">
+                <div  class="ruleSubmit right button"
+                      ng-click="disclaimer? setSchedule(): ''"
+                      ng-dissabled="!disclaimer">
+                    SET SCHEDULE
+                </div>
+            </div>
+        </div>
+</div>

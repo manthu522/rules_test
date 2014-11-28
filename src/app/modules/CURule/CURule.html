@@ -1,0 +1,114 @@
+<div class="row cuRuleTitle">
+    <div class="row collapse thisRuleTitle cyan" ng-click="editTitle()">
+        <div class="small-3 column modifyIcon">
+            <img src="assets/modifyActive.png" />
+        </div>
+        <div class="small-9 column cuTitle oneLine">
+            <h1>{{rule.title || 'New Rule' | capitalize}}</h1>
+        </div>
+    </div>
+    <div class="row closeEditBlock animate-show"
+         ng-show="openTitle"
+         ng-click="editTitle()">
+        <div class="small-3 right">CLOSE</div>
+    </div>
+    <div class="row animate-show" ng-show="openTitle">
+        <div class="small-10 small-centered column ruleEditBlock" >
+            <div class="row ruleEdit">
+                <div class="small-12 small-centered column ">
+                    <label><b>Name of Rule</b><small>This will be displayed in <span>My Rules</span></small>
+                        <input type="text" ng-model="rule.title"/>
+                    </label>
+                </div>
+            </div>
+            <div class="row ruleEdit">
+                <div class="small-12 small-centered column ">
+                    <label><b>Description</b><small>Will be displayed in <span>My Rules</span></small>
+                        <input type="text" ng-model="rule.description"/>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row settings" ng-click="addProvision({type: 'settings'})">
+    <div class="">
+        <h2>PHONE SETTINGS</h2>
+    </div>
+</div>
+<div class="row restriction"
+     ng-repeat="setting in rule.newProvisions | filter:'settings' track by $id(setting)">
+    <div class="small-7 medium-9 column restrictTitle oneLine"><b>{{setting[setting.key].label | capitalize}}</b></div>
+    <div class="small-2 right  column restrictionSlidePos">
+        <div class="switchContainer">
+            <div class="onoffswitch">
+                <input  id="{{setting.key}}"
+                        type="checkbox"
+                        name="{{setting.key}}"
+                        class="onoffswitch-checkbox"
+                        ng-model="setting[setting.key].enabled"
+                        ng-checked="setting[setting.key].enabled"
+                        btn-checkbox />
+                <label class="onoffswitch-label" for="{{setting.key}}">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                <script>
+                    document.getElementById("{{setting.key}}").onclick = function () {};
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row settings" ng-click="addProvision({type: 'application'})">
+    <div class="left">
+        <h2>APPLICATIONS</h2>
+    </div>
+</div>
+<div class="row restriction"
+     ng-repeat="apps in rule.newProvisions | filter:'application' track by $id(apps)">
+    <div class="small-7 medium-9 column restrictTitle oneLine"><b>{{apps[apps.key].label}}</b></div>
+    <div class="small-2 right column restrictionSlidePos">
+        <div class="switchContainer">
+            <div class="onoffswitch">
+                <input type="checkbox"
+                       name="{{apps.key}}"
+                       class="onoffswitch-checkbox"
+                       id="{{apps.key}}"
+                       ng-model="apps[apps.key].enabled"
+                       ng-checked="apps[apps.key].enabled"
+                       btn-checkbox>
+                <label class="onoffswitch-label" for="{{apps.key}}">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                <script>
+                    document.getElementById("{{setting.key}}").onclick = function () {};
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row disclaim">
+    <div class="disclaimRadio"
+         ng-model="disclaimer"
+         ng-class="disclaimer? 'active': 'disabled';"
+         btn-checkbox>
+        <div class="innerCircle"></div>
+    </div>
+    <div class="right disclaimText">
+        <p><b class="exclaim">!</b><b>IMPORTANT</b> By selecting this, you are agreeing to the terms and condit
+            ions of
+            this
+            profile
+            provisioning
+            app contained in this <b>TERMS AND CONDITIONS</b> document</p>
+    </div>
+</div>
+<div class="row cuRule">
+    <div  class="button ruleSubmit right"
+          ng-click="disclaimer? cuRule():'';"
+          ng-dissabled="disclaimer" >
+            {{isNew? 'CREATE PHONE RULE': 'SAVE CHANGES'}}
+    </div>
+</div>

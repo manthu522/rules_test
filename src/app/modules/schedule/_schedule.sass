@@ -1,0 +1,248 @@
+$inputHeight: 6em
+@import "../sassHelpers/settings"
+
+.schedule
+  box-shadow: inset 0 -19px 6em -19px black
+  margin-bottom: 3%
+.scheduleTitle
+  height: 6em
+  padding-top: 1.5em
+.scheduleTitle > b
+  font-size: 3em
+.scheduleImg
+  height: 6em
+  padding-top: 1em
+  img
+    height: 4em
+    width: 3em
+@media #{$xsmall-only}
+  .row.input
+    height: $inputHeight/1.5
+    margin: 1em 0
+  .clockEnd
+    height: 100%
+    b
+      display: block
+      font-size: $inputHeight/5
+    img
+      height: 2*$inputHeight/4
+  .timeGroup
+    height: $inputHeight - 2em
+    list-style: none
+    margin: 0
+    left: 0
+    background: linear-gradient(top, #5F8091, #5f8091 50%, #264154 50% )
+    border-radius: 0.5em
+  .timeBar
+    height: 100%
+    width: 33%
+    color: #FAEC32 //Fallback for non Webkit
+    font-weight: bold
+    font-size: 2em
+    padding-top: 0.5em
+    padding-left: 0.2em
+    border-right: 1px solid lightslategray
+    text-align: center
+    span
+      background: -webkit-linear-gradient(#faec32, #faec32 50%, #FFDA16 50%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    &.AM span
+      background: -webkit-linear-gradient(#84E7FF, #84E7FF 50%, #47D2F6 50%)
+      -webkit-background-clip: text
+    &.PM span
+      background: -webkit-linear-gradient(#E3A200, #E3A200 50%, #D66B00 50%)
+      -webkit-background-clip: text
+    &.ampm
+      border-right: none
+      font-size: 1.6em
+      padding-top: 0.75em
+@media #{$small-only}
+  .row.input
+    height: $inputHeight
+    margin: 1em 0
+  .clockEnd
+    height: 100%
+    b
+      display: block
+      font-size: $inputHeight/4
+    img
+      height: 2*$inputHeight/3
+  .timeGroup
+    height: $inputHeight - 2em
+    list-style: none
+    margin: 0
+    left: 0
+    background: linear-gradient(top, #5F8091, #5f8091 50%, #264154 50% )
+    border-radius: 0.5em
+  .timeBar
+    height: 100%
+    width: 33%
+    color: #FAEC32 //Fallback for non Webkit
+    font-weight: bold
+    font-size: 2.5em
+    padding-top: 0.3em
+    border-right: 1px solid lightslategray
+    text-align: center
+    span
+      background: -webkit-linear-gradient(#faec32, #faec32 50%, #FFDA16 50%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    &.AM span
+      background: -webkit-linear-gradient(#84E7FF, #84E7FF 50%, #47D2F6 50%)
+      -webkit-background-clip: text
+    &.PM span
+      background: -webkit-linear-gradient(#E3A200, #E3A200 50%, #D66B00 50%)
+      -webkit-background-clip: text
+    &.ampm
+      border-right: none
+      font-size: 1.9em
+      padding-top: 0.58em
+@media #{$medium-up}
+  .row.input
+    height: $inputHeight
+    margin: 1em 0
+  .clockEnd
+    height: 100%
+    b
+      display: block
+      font-size: $inputHeight/3
+    img
+      height: 2*$inputHeight/3
+  .timeGroup
+    height: $inputHeight
+    list-style: none
+    margin: 0
+    left: 0
+    background: linear-gradient(top, #5F8091, #5f8091 50%, #264154 50% )
+    border-radius: 0.5em
+  .timeBar
+    height: 100%
+    width: 33%
+    color: #FAEC32 //Fallback for non Webkit
+    font-weight: bold
+    font-size: 5em
+    padding-top: .1em
+    border-right: 1px solid lightslategray
+    text-align: center
+    span
+      background: -webkit-linear-gradient(#faec32, #faec32 50%, #FFDA16 50%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    &.AM span
+      background: -webkit-linear-gradient(#84E7FF, #84E7FF 50%, #47D2F6 50%)
+      -webkit-background-clip: text
+    &.PM span
+      background: -webkit-linear-gradient(#E3A200, #E3A200 50%, #D66B00 50%)
+      -webkit-background-clip: text
+    &.ampm
+      border-right: none
+      font-size: 4em
+      padding-top: 0.26em
+.hideThisFarAway
+  position: absolute
+  left: -999999999px
+  top: -9999999999px
+.days
+  height: 6em
+  .dayButtons
+    width: 100%
+    overflow: hidden
+@media #{$xsmall-only}
+  .day
+    height: 1.7em
+    width: 14.28%
+    background-color: #7496a4
+    font-size: 2.1em
+    text-align: center
+    padding-top: 0.3em
+    border: 1px solid lightslategray
+    &.active
+      background-color: #274153
+      color: #FBD748
+      box-shadow: inset 0px 0px 8px 1px black
+      border-color: black
+    b
+      position: relative
+      left: -0.3em
+@media #{$small-only}
+  .day
+    height: 1.7em
+    width: 14.28%
+    background-color: #7496a4
+    font-size: 3em
+    text-align: center
+    padding-top: 0.3em
+    border: 1px solid lightslategray
+    &.active
+      background-color: #274153
+      color: #FBD748
+      box-shadow: inset 0px 0px 8px 1px black
+      border-color: black
+    b
+      position: relative
+      left: -0.15em
+@media #{$medium-up}
+  .day
+    height: 1.7em
+    width: 14.28%
+    background-color: #7496a4
+    font-size: 3em
+    text-align: center
+    padding-top: 0.3em
+    border: 1px solid lightslategray
+    &.active
+      background-color: #274153
+      color: #FBD748
+      box-shadow: inset 0px 0px 8px 1px black
+      border-color: black
+.weeklyRow
+  height: 4em
+  padding-top: 1em
+.weeklyText
+  height: 100%
+  padding-top: 1%
+  padding-left: 4em
+.weekly
+  min-height: 1px
+  height: 2em
+  width: 2em
+  border-radius: 50%
+  background-color: #7496a4
+  box-shadow: inset 0 -2px 9px #000000
+.innerCircle
+  background-color: #7496A4
+  border-radius: 50%
+  height: 1.5em
+  width: 1.5em
+  min-height: 1px
+  margin: .25em auto
+.weekly.active
+  >.innerCircle
+    background-color: #42CDF3
+.disclaimRadio
+  @extend .weekly
+  position: relative
+  top: 2em
+.disclaim
+  height: 4em
+.disclaimText
+  position: relative
+  width: 80%
+  height: 6em
+  top: -40%
+  background-color: #7496a4
+  p
+    line-height: 120%
+    font-size: 80%
+    margin: 1.1em
+.disclaimText::before
+  content: ""
+  position: absolute
+  right: 100%
+  background-color: transparent
+  border-left: 1em solid transparent
+  width: 0
+  height: 0
+  border-top: 3em solid #7496A4
+  border-bottom: 3em solid #7496A4

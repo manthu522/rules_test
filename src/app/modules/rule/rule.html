@@ -1,0 +1,44 @@
+<div class="row collapse ruleFront"
+     ng-click="openMenu()"
+     ng-class="setColor(index)">
+    <div class="small-7 medium-10 column ruleInfo">
+        <h1 class="hide-for-small ruleTitle">{{rule.title | capitalize}}</h1>
+        <h3 class="show-for-small ruleTitle paddingTop">{{rule.title | capitalize}}</h3>
+        <small>{{rule.description}}</small>
+    </div>
+    <div class="small-5 medium-2 column infoBox">
+        <div class="row ">
+            <div class="infoEnabled right">
+                <div>{{rule.enabled?'ENABLED': 'DISABLED'}}</div>
+            </div>
+        </div>
+        <div class="row" ng-show="rule.enabled" >
+            <div class="timeLeft">
+                <div>
+                    {{hh}}:{{mm}}:{{ss}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row ruleBack">
+    <div class="button-group ruleButtons" >
+        <div id="enableRule"
+                class="small-3 column ruleButton ruleButtonStructure ruleEnableButtonFix"
+                ng-click="enableRule()"
+                ng-class="rule.enabled?'enabled':'disabled';" >
+        </div>
+        <div id="scheduleRule"
+                class="small-3 column ruleButton"
+                ng-click="scheduleRule()">
+        </div>
+        <div id="modifyRule"
+                class="small-3 column ruleButton"
+                ng-click="modifyRule()">
+        </div>
+        <div id="deleteRule"
+                class="small-3 column ruleButton ruleButtonStructure end"
+                ng-click="deleteRule()">
+        </div>
+    </div>
+</div>

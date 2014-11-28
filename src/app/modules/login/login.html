@@ -1,0 +1,52 @@
+<div>
+    <div class="row loginSignUp--landing">
+        <form class="" name="loginForm" ng-submit="login(loginForm)">
+            <div class="loginSignUp--Margin row">
+                <div class="small-10 small-centered column">
+                    <label>Email
+                        <input
+                                type="email"
+                                placeholder="Email"
+                                ng-model="user.email"
+                                required
+                                autofocus
+                                mongoose-error
+                                />
+                    </label>
+                    <!--<label class="error text-center" ng-show="errors.email">-->
+                        <!--<p>{{ errors.email}}</p>-->
+                    <!--</label>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-10 small-centered column">
+                    <label>Password
+                        <input
+                                type="password"
+                                placeholder="password"
+                                ng-model="user.password"
+                                required
+                                mongoose-error
+                                />
+                    </label>
+                     <!--<label class="error" ng-show="form.password.$error.mongoose">-->
+                         <!--<p>{{ errors.password}} </p>-->
+                     <!--</label>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-10 small-centered column">
+                    <button type="submit" class="button expand loginSignUp_button-style">SIGN IN</button>
+                    <small><a href="/signup" class="text-center">Create an account </a></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-10 small-centered column">
+                    <label class="error">
+                        <p class="text-center">{{error.other}}</p>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

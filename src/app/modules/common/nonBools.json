@@ -1,0 +1,110 @@
+{
+  "ratingApps": {
+    "minium_ios_version": null,
+    "default_value": 1000,
+    "label": "Allow app ratings",
+    "possible_values": [
+      [
+        "4+",
+        100
+      ],
+      [
+        "9+",
+        200
+      ],
+      [
+        "12+",
+        300
+      ],
+      [
+        "17+",
+        600
+      ],
+      [
+        "All apps",
+        1000
+      ]
+    ],
+    "type" : "application"
+  },
+  "ratingMovies": {
+    "minium_ios_version": null,
+    "default_value": 1000,
+    "label": "Allow movie ratings",
+    "possible_values": [
+      [
+        "G",
+        100
+      ],
+      [
+        "PG",
+        200
+      ],
+      [
+        "PG-13",
+        300
+      ],
+      [
+        "R",
+        400
+      ],
+      [
+        "NC-17",
+        500
+      ],
+      [
+        "All movies",
+        1000
+      ]
+    ],
+    "type": "application"
+  },
+  "ratingRegion": {
+    "minium_ios_version": null,
+    "default_value": "us",
+    "label": "Rating region",
+    "possible_values": [
+      [
+        "United States",
+        "us"
+      ]
+    ],
+    "type": "settings"
+  },
+  "ratingTVShows": {
+    "minium_ios_version": null,
+    "default_value": 1000,
+    "label": "Allow TV show ratings",
+    "possible_values": [
+      [
+        "TV-Y",
+        100
+      ],
+      [
+        "TV-Y7",
+        200
+      ],
+      [
+        "TV-G",
+        300
+      ],
+      [
+        "TV-PG",
+        400
+      ],
+      [
+        "TV-14",
+        500
+      ],
+      [
+        "TV-MA",
+        600
+      ],
+      [
+        "All TV shows",
+        1000
+      ]
+    ],
+    "type": "settings"
+  }
+}

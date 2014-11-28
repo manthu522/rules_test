@@ -1,0 +1,14 @@
+{
+  "name": "angular-mm-foundation",
+  "homepage": "https://github.com/madmimi/angular-foundation",
+  "version": "0.2.1",
+  "_release": "0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.1",
+    "commit": "f89c4fdc6f3c006741ae80ad969f004a1148870b"
+  },
+  "_source": "git://github.com/madmimi/angular-foundation.git",
+  "_target": "~0.2.1",
+  "_originalSource": "angular-mm-foundation"
+}

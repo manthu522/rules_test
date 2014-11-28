@@ -1,0 +1,14 @@
+{
+  "name": "ps-input-time",
+  "homepage": "https://github.com/randallmeeker/ps-input-time",
+  "_release": "cff666ec0b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cff666ec0ba38b681b41f46fc5842d87f8d0842a"
+  },
+  "_source": "https://github.com/randallmeeker/ps-input-time.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/randallmeeker/ps-input-time.git",
+  "_direct": true
+}

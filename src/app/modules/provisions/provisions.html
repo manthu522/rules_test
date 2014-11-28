@@ -1,0 +1,24 @@
+<div class="row proModal">
+    <button class="button expand provisions_button" type="button expand" ng-click="ok()">
+        Add to rule
+    </button>
+    <ul class="no-bullet">
+        <li class="row provision--styling" ng-repeat="provision in provisions | filter:type">
+            <div class="small-2 column removePadding" ng-click="addProvision(provision)">
+                <div class="button expand left provisions_button">Add</div>
+            </div>
+            <div class="small-9 column provisions_title text-center oneLine">
+                {{provision[provision.key].label}}
+            </div>
+        </li>
+    </ul>
+    <!--<accordion close-others="true">-->
+        <!--<accordion-group class="row"-->
+                         <!--ng-repeat="provision in provisions | filter:type"-->
+                         <!--heading="{{provision[provision.key].label}}" >-->
+            <!--<div class="contain-to-grid addPro" ng-click="addProvision(provision)">-->
+                <!--<button type="button" class="button expanded">{{provision[provision.key].label}}</button>-->
+            <!--</div>-->
+        <!--</accordion-group>-->
+    <!--</accordion>-->
+</div>

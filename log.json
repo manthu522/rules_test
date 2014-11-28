@@ -1,0 +1,1199 @@
+{
+    _readableState: {
+        highWaterMark: 16384,
+        buffer: [
+            
+        ],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: false,
+        ended: true,
+        endEmitted: true,
+        reading: false,
+        calledRead: true,
+        sync: true,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        objectMode: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        oldMode: true,
+        decoder: {
+            encoding: 'binary',
+            write: [
+                Function: passThroughWrite
+            ]
+        },
+        encoding: 'binary'
+    },
+    readable: false,
+    domain: null,
+    _events: {
+        end: [
+            [
+                Function: responseOnEnd
+            ],
+            [
+                Function
+            ]
+        ],
+        data: [
+            Function
+        ],
+        readable: [
+            Function
+        ]
+    },
+    _maxListeners: 10,
+    socket: {
+        _readableState: {
+            highWaterMark: 16384,
+            buffer: [
+                
+            ],
+            length: 0,
+            pipes: null,
+            pipesCount: 0,
+            flowing: false,
+            ended: true,
+            endEmitted: true,
+            reading: false,
+            calledRead: true,
+            sync: false,
+            needReadable: true,
+            emittedReadable: false,
+            readableListening: false,
+            objectMode: false,
+            defaultEncoding: 'utf8',
+            ranOut: false,
+            awaitDrain: 0,
+            readingMore: false,
+            oldMode: false,
+            decoder: null,
+            encoding: null
+        },
+        readable: false,
+        domain: null,
+        _events: {
+            finish: [
+                Object
+            ],
+            sslOutEnd: [
+                Function
+            ],
+            free: [
+                Function
+            ],
+            close: [
+                Object
+            ],
+            agentRemove: [
+                Function
+            ],
+            drain: [
+                Function: ondrain
+            ]
+        },
+        _maxListeners: 10,
+        _writableState: {
+            highWaterMark: 16384,
+            objectMode: false,
+            needDrain: false,
+            ending: false,
+            ended: false,
+            finished: false,
+            decodeStrings: true,
+            defaultEncoding: 'utf8',
+            length: 0,
+            writing: false,
+            sync: false,
+            bufferProcessing: false,
+            onwrite: [
+                Function
+            ],
+            writecb: null,
+            writelen: 0,
+            buffer: [
+                
+            ],
+            errorEmitted: false
+        },
+        writable: false,
+        allowHalfOpen: true,
+        pair: {
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            server: undefined,
+            _secureEstablished: true,
+            _isServer: false,
+            _encWriteState: true,
+            _clearWriteState: true,
+            _doneFlag: false,
+            _destroying: false,
+            credentials: [
+                Object
+            ],
+            _rejectUnauthorized: true,
+            _requestCert: true,
+            ssl: {
+                
+            },
+            servername: false,
+            cleartext: [
+                Circular
+            ],
+            encrypted: [
+                Object
+            ],
+            fd: undefined,
+            npnProtocol: undefined
+        },
+        _pending: null,
+        _pendingEncoding: '',
+        _pendingCallback: null,
+        _doneFlag: false,
+        _retryAfterPartial: false,
+        _halfRead: false,
+        _sslOutCb: null,
+        _resumingSession: false,
+        _reading: true,
+        _destroyed: true,
+        _ended: true,
+        _finished: false,
+        _opposite: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Circular
+            ],
+            _buffer: [
+                Object
+            ]
+        },
+        _buffer: {
+            isFull: false,
+            pool: <Buffer160301014e0100014a0303bffac0d2b2e2a83c026841b57d52aaafcab0e6e26330b2520e1b70a849e8dafa0000a0c030c02cc0...>,
+            offset: 1473,
+            remaining: 10484287
+        },
+        _handle: {
+            readStop: [
+                Function
+            ],
+            readStart: [
+                Function
+            ]
+        },
+        socket: {
+            _connecting: false,
+            _handle: null,
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: false,
+            onend: null,
+            destroyed: true,
+            bytesRead: 4099,
+            _bytesDispatched: 1070,
+            _pendingData: null,
+            _pendingEncoding: '',
+            read: [
+                Function
+            ],
+            _consuming: true,
+            _idleNext: null,
+            _idlePrev: null,
+            _idleTimeout: -1
+        },
+        encrypted: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Circular
+            ],
+            _buffer: [
+                Object
+            ]
+        },
+        authorized: true,
+        _controlReleased: true,
+        parser: null,
+        _httpMessage: {
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            output: [
+                
+            ],
+            outputEncodings: [
+                
+            ],
+            writable: true,
+            _last: false,
+            chunkedEncoding: false,
+            shouldKeepAlive: true,
+            useChunkedEncodingByDefault: true,
+            sendDate: false,
+            _headerSent: true,
+            _header: 'PUT/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+                allowAssistantUserGeneratedContent
+            ]=1&restrictions[
+                allowCamera
+            ]=0HTTP/1.1\r\nAccept: */*\r\nuser-agent: PhoneRulesServer/Heroku\r\nHost: appblade.com\r\nAccept-Encoding: gzip,
+            deflate\r\nAuthorization: Beareraa02ad49be7eca06916393e0ca19b665a9fbbc3b74dcb6d3a8fc4cad8d3dc5db\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n',
+            _hasBody: true,
+            _trailer: '',
+            finished: true,
+            _hangupClose: false,
+            socket: [
+                Circular
+            ],
+            connection: [
+                Circular
+            ],
+            agent: [
+                Object
+            ],
+            socketPath: undefined,
+            method: 'PUT',
+            path: '/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+                allowAssistantUserGeneratedContent
+            ]=1&restrictions[
+                allowCamera
+            ]=0',
+            _headers: [
+                Object
+            ],
+            _headerNames: [
+                Object
+            ],
+            parser: null,
+            res: [
+                Circular
+            ]
+        },
+        ondata: null,
+        onend: null,
+        npnProtocol: undefined
+    },
+    connection: {
+        _readableState: {
+            highWaterMark: 16384,
+            buffer: [
+                
+            ],
+            length: 0,
+            pipes: null,
+            pipesCount: 0,
+            flowing: false,
+            ended: true,
+            endEmitted: true,
+            reading: false,
+            calledRead: true,
+            sync: false,
+            needReadable: true,
+            emittedReadable: false,
+            readableListening: false,
+            objectMode: false,
+            defaultEncoding: 'utf8',
+            ranOut: false,
+            awaitDrain: 0,
+            readingMore: false,
+            oldMode: false,
+            decoder: null,
+            encoding: null
+        },
+        readable: false,
+        domain: null,
+        _events: {
+            finish: [
+                Object
+            ],
+            sslOutEnd: [
+                Function
+            ],
+            free: [
+                Function
+            ],
+            close: [
+                Object
+            ],
+            agentRemove: [
+                Function
+            ],
+            drain: [
+                Function: ondrain
+            ]
+        },
+        _maxListeners: 10,
+        _writableState: {
+            highWaterMark: 16384,
+            objectMode: false,
+            needDrain: false,
+            ending: false,
+            ended: false,
+            finished: false,
+            decodeStrings: true,
+            defaultEncoding: 'utf8',
+            length: 0,
+            writing: false,
+            sync: false,
+            bufferProcessing: false,
+            onwrite: [
+                Function
+            ],
+            writecb: null,
+            writelen: 0,
+            buffer: [
+                
+            ],
+            errorEmitted: false
+        },
+        writable: false,
+        allowHalfOpen: true,
+        pair: {
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            server: undefined,
+            _secureEstablished: true,
+            _isServer: false,
+            _encWriteState: true,
+            _clearWriteState: true,
+            _doneFlag: false,
+            _destroying: false,
+            credentials: [
+                Object
+            ],
+            _rejectUnauthorized: true,
+            _requestCert: true,
+            ssl: {
+                
+            },
+            servername: false,
+            cleartext: [
+                Circular
+            ],
+            encrypted: [
+                Object
+            ],
+            fd: undefined,
+            npnProtocol: undefined
+        },
+        _pending: null,
+        _pendingEncoding: '',
+        _pendingCallback: null,
+        _doneFlag: false,
+        _retryAfterPartial: false,
+        _halfRead: false,
+        _sslOutCb: null,
+        _resumingSession: false,
+        _reading: true,
+        _destroyed: true,
+        _ended: true,
+        _finished: false,
+        _opposite: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Circular
+            ],
+            _buffer: [
+                Object
+            ]
+        },
+        _buffer: {
+            isFull: false,
+            pool: <Buffer160301014e0100014a0303bffac0d2b2e2a83c026841b57d52aaafcab0e6e26330b2520e1b70a849e8dafa0000a0c030c02cc0...>,
+            offset: 1473,
+            remaining: 10484287
+        },
+        _handle: {
+            readStop: [
+                Function
+            ],
+            readStart: [
+                Function
+            ]
+        },
+        socket: {
+            _connecting: false,
+            _handle: null,
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: false,
+            onend: null,
+            destroyed: true,
+            bytesRead: 4099,
+            _bytesDispatched: 1070,
+            _pendingData: null,
+            _pendingEncoding: '',
+            read: [
+                Function
+            ],
+            _consuming: true,
+            _idleNext: null,
+            _idlePrev: null,
+            _idleTimeout: -1
+        },
+        encrypted: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Circular
+            ],
+            _buffer: [
+                Object
+            ]
+        },
+        authorized: true,
+        _controlReleased: true,
+        parser: null,
+        _httpMessage: {
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            output: [
+                
+            ],
+            outputEncodings: [
+                
+            ],
+            writable: true,
+            _last: false,
+            chunkedEncoding: false,
+            shouldKeepAlive: true,
+            useChunkedEncodingByDefault: true,
+            sendDate: false,
+            _headerSent: true,
+            _header: 'PUT/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+                allowAssistantUserGeneratedContent
+            ]=1&restrictions[
+                allowCamera
+            ]=0HTTP/1.1\r\nAccept: */*\r\nuser-agent: PhoneRulesServer/Heroku\r\nHost: appblade.com\r\nAccept-Encoding: gzip,
+            deflate\r\nAuthorization: Beareraa02ad49be7eca06916393e0ca19b665a9fbbc3b74dcb6d3a8fc4cad8d3dc5db\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n',
+            _hasBody: true,
+            _trailer: '',
+            finished: true,
+            _hangupClose: false,
+            socket: [
+                Circular
+            ],
+            connection: [
+                Circular
+            ],
+            agent: [
+                Object
+            ],
+            socketPath: undefined,
+            method: 'PUT',
+            path: '/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+                allowAssistantUserGeneratedContent
+            ]=1&restrictions[
+                allowCamera
+            ]=0',
+            _headers: [
+                Object
+            ],
+            _headerNames: [
+                Object
+            ],
+            parser: null,
+            res: [
+                Circular
+            ]
+        },
+        ondata: null,
+        onend: null,
+        npnProtocol: undefined
+    },
+    httpVersion: '1.1',
+    complete: true,
+    headers: {
+        date: 'Sun,
+        13Jul201407: 53: 33GMT',
+        server: 'Apache',
+        'x-runtime': '0.016385',
+        'x-powered-by': 'PhusionPassenger4.0.37',
+        'strict-transport-security': 'max-age=31536000',
+        status: '404NotFound',
+        vary: 'Accept-Encoding,
+        User-Agent',
+        'content-encoding': 'gzip',
+        'content-length': '20',
+        'keep-alive': 'timeout=15,
+        max=100',
+        connection: 'Keep-Alive',
+        'content-type': 'text/html;charset=UTF-8'
+    },
+    trailers: {
+        
+    },
+    _pendings: [
+        
+    ],
+    _pendingIndex: 0,
+    url: '',
+    method: null,
+    statusCode: 404,
+    client: {
+        _readableState: {
+            highWaterMark: 16384,
+            buffer: [
+                
+            ],
+            length: 0,
+            pipes: null,
+            pipesCount: 0,
+            flowing: false,
+            ended: true,
+            endEmitted: true,
+            reading: false,
+            calledRead: true,
+            sync: false,
+            needReadable: true,
+            emittedReadable: false,
+            readableListening: false,
+            objectMode: false,
+            defaultEncoding: 'utf8',
+            ranOut: false,
+            awaitDrain: 0,
+            readingMore: false,
+            oldMode: false,
+            decoder: null,
+            encoding: null
+        },
+        readable: false,
+        domain: null,
+        _events: {
+            finish: [
+                Object
+            ],
+            sslOutEnd: [
+                Function
+            ],
+            free: [
+                Function
+            ],
+            close: [
+                Object
+            ],
+            agentRemove: [
+                Function
+            ],
+            drain: [
+                Function: ondrain
+            ]
+        },
+        _maxListeners: 10,
+        _writableState: {
+            highWaterMark: 16384,
+            objectMode: false,
+            needDrain: false,
+            ending: false,
+            ended: false,
+            finished: false,
+            decodeStrings: true,
+            defaultEncoding: 'utf8',
+            length: 0,
+            writing: false,
+            sync: false,
+            bufferProcessing: false,
+            onwrite: [
+                Function
+            ],
+            writecb: null,
+            writelen: 0,
+            buffer: [
+                
+            ],
+            errorEmitted: false
+        },
+        writable: false,
+        allowHalfOpen: true,
+        pair: {
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            server: undefined,
+            _secureEstablished: true,
+            _isServer: false,
+            _encWriteState: true,
+            _clearWriteState: true,
+            _doneFlag: false,
+            _destroying: false,
+            credentials: [
+                Object
+            ],
+            _rejectUnauthorized: true,
+            _requestCert: true,
+            ssl: {
+                
+            },
+            servername: false,
+            cleartext: [
+                Circular
+            ],
+            encrypted: [
+                Object
+            ],
+            fd: undefined,
+            npnProtocol: undefined
+        },
+        _pending: null,
+        _pendingEncoding: '',
+        _pendingCallback: null,
+        _doneFlag: false,
+        _retryAfterPartial: false,
+        _halfRead: false,
+        _sslOutCb: null,
+        _resumingSession: false,
+        _reading: true,
+        _destroyed: true,
+        _ended: true,
+        _finished: false,
+        _opposite: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Circular
+            ],
+            _buffer: [
+                Object
+            ]
+        },
+        _buffer: {
+            isFull: false,
+            pool: <Buffer160301014e0100014a0303bffac0d2b2e2a83c026841b57d52aaafcab0e6e26330b2520e1b70a849e8dafa0000a0c030c02cc0...>,
+            offset: 1473,
+            remaining: 10484287
+        },
+        _handle: {
+            readStop: [
+                Function
+            ],
+            readStart: [
+                Function
+            ]
+        },
+        socket: {
+            _connecting: false,
+            _handle: null,
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: false,
+            onend: null,
+            destroyed: true,
+            bytesRead: 4099,
+            _bytesDispatched: 1070,
+            _pendingData: null,
+            _pendingEncoding: '',
+            read: [
+                Function
+            ],
+            _consuming: true,
+            _idleNext: null,
+            _idlePrev: null,
+            _idleTimeout: -1
+        },
+        encrypted: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Circular
+            ],
+            _buffer: [
+                Object
+            ]
+        },
+        authorized: true,
+        _controlReleased: true,
+        parser: null,
+        _httpMessage: {
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            output: [
+                
+            ],
+            outputEncodings: [
+                
+            ],
+            writable: true,
+            _last: false,
+            chunkedEncoding: false,
+            shouldKeepAlive: true,
+            useChunkedEncodingByDefault: true,
+            sendDate: false,
+            _headerSent: true,
+            _header: 'PUT/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+                allowAssistantUserGeneratedContent
+            ]=1&restrictions[
+                allowCamera
+            ]=0HTTP/1.1\r\nAccept: */*\r\nuser-agent: PhoneRulesServer/Heroku\r\nHost: appblade.com\r\nAccept-Encoding: gzip,
+            deflate\r\nAuthorization: Beareraa02ad49be7eca06916393e0ca19b665a9fbbc3b74dcb6d3a8fc4cad8d3dc5db\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n',
+            _hasBody: true,
+            _trailer: '',
+            finished: true,
+            _hangupClose: false,
+            socket: [
+                Circular
+            ],
+            connection: [
+                Circular
+            ],
+            agent: [
+                Object
+            ],
+            socketPath: undefined,
+            method: 'PUT',
+            path: '/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+                allowAssistantUserGeneratedContent
+            ]=1&restrictions[
+                allowCamera
+            ]=0',
+            _headers: [
+                Object
+            ],
+            _headerNames: [
+                Object
+            ],
+            parser: null,
+            res: [
+                Circular
+            ]
+        },
+        ondata: null,
+        onend: null,
+        npnProtocol: undefined
+    },
+    _consuming: true,
+    _dumped: false,
+    httpVersionMajor: 1,
+    httpVersionMinor: 1,
+    upgrade: false,
+    req: {
+        domain: null,
+        _events: {
+            response: [
+                Function
+            ],
+            error: [
+                Function
+            ]
+        },
+        _maxListeners: 10,
+        output: [
+            
+        ],
+        outputEncodings: [
+            
+        ],
+        writable: true,
+        _last: false,
+        chunkedEncoding: false,
+        shouldKeepAlive: true,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _headerSent: true,
+        _header: 'PUT/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+            allowAssistantUserGeneratedContent
+        ]=1&restrictions[
+            allowCamera
+        ]=0HTTP/1.1\r\nAccept: */*\r\nuser-agent: PhoneRulesServer/Heroku\r\nHost: appblade.com\r\nAccept-Encoding: gzip,
+        deflate\r\nAuthorization: Beareraa02ad49be7eca06916393e0ca19b665a9fbbc3b74dcb6d3a8fc4cad8d3dc5db\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n',
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _hangupClose: false,
+        socket: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Object
+            ],
+            _buffer: [
+                Object
+            ],
+            _handle: [
+                Object
+            ],
+            socket: [
+                Object
+            ],
+            encrypted: [
+                Object
+            ],
+            authorized: true,
+            _controlReleased: true,
+            parser: null,
+            _httpMessage: [
+                Circular
+            ],
+            ondata: null,
+            onend: null,
+            npnProtocol: undefined
+        },
+        connection: {
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: true,
+            pair: [
+                Object
+            ],
+            _pending: null,
+            _pendingEncoding: '',
+            _pendingCallback: null,
+            _doneFlag: false,
+            _retryAfterPartial: false,
+            _halfRead: false,
+            _sslOutCb: null,
+            _resumingSession: false,
+            _reading: true,
+            _destroyed: true,
+            _ended: true,
+            _finished: false,
+            _opposite: [
+                Object
+            ],
+            _buffer: [
+                Object
+            ],
+            _handle: [
+                Object
+            ],
+            socket: [
+                Object
+            ],
+            encrypted: [
+                Object
+            ],
+            authorized: true,
+            _controlReleased: true,
+            parser: null,
+            _httpMessage: [
+                Circular
+            ],
+            ondata: null,
+            onend: null,
+            npnProtocol: undefined
+        },
+        agent: {
+            domain: null,
+            _events: [
+                Object
+            ],
+            _maxListeners: 10,
+            options: {
+                
+            },
+            requests: {
+                
+            },
+            sockets: {
+                
+            },
+            maxSockets: 5,
+            createConnection: [
+                Function: createConnection
+            ]
+        },
+        socketPath: undefined,
+        method: 'PUT',
+        path: '/api/3/mdm/device/cb0935ad-f747-492d-8ce7-9f9ab88300da?restrictions[
+            allowAssistantUserGeneratedContent
+        ]=1&restrictions[
+            allowCamera
+        ]=0',
+        _headers: {
+            accept: '*/*',
+            'user-agent': 'PhoneRulesServer/Heroku',
+            host: 'appblade.com',
+            'accept-encoding': 'gzip,
+            deflate',
+            authorization: 'Beareraa02ad49be7eca06916393e0ca19b665a9fbbc3b74dcb6d3a8fc4cad8d3dc5db',
+            'content-length': 0
+        },
+        _headerNames: {
+            accept: 'Accept',
+            'user-agent': 'user-agent',
+            host: 'Host',
+            'accept-encoding': 'Accept-Encoding',
+            authorization: 'Authorization',
+            'content-length': 'Content-Length'
+        },
+        parser: null,
+        res: [
+            Circular
+        ]
+    },
+    pipe: [
+        Function
+    ],
+    addListener: [
+        Function: addListener
+    ],
+    on: [
+        Function: addListener
+    ],
+    pause: [
+        Function
+    ],
+    resume: [
+        Function
+    ],
+    read: [
+        Function
+    ],
+    rawEncoded: '\u001f\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000',
+    raw: <Buffer>
+}

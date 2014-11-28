@@ -1,0 +1,137 @@
+@import "../sassHelpers/settings"
+.infoBox
+  height: 100%
+.infoEnabled
+  height: 3em
+  min-width: 140px
+  position: relative
+  div
+    position: absolute
+    top: 50%
+    left: 30%
+.timeLeft
+  min-width: 130px
+  height: 3em
+  position: relative
+  float: right
+  background-image: url("assets/timeBG.png")
+  background-repeat: no-repeat
+  background-size: auto 100%
+  div
+    position: absolute
+    top: 35%
+    left: 30%
+@mixin putColor($color)
+  background-color: $color
+.cyan
+  @include putColor(#00ECE9)
+.blue
+  @include putColor(#2C17D4)
+.red
+  @include putColor(#E80010)
+.orange
+  @include putColor(#E16922)
+.yellow
+  @include putColor(#DFC541)
+.green
+  @include putColor(#00E043)
+.ruleFront
+  color: #ffffff
+  position: relative
+  height: 6em
+  transition: transform 0.5s ease
+  transform: translateX(0)
+  z-index: 1
+  small
+    padding-left: inherit
+@media #{$xsmall-only}
+  .ruleFront.clicked
+    transform: translateX(83%)
+@media #{$small-only}
+  .ruleFront.clicked
+    transform: translateX(81%)
+@media #{$medium-up}
+  .ruleFront.clicked
+    transform: translateX(80%)
+.ruleFront::before
+  position: absolute
+  right: 100%
+  background-color: transparent
+  border-top-width: 3em
+  border-top-style: solid
+  border-bottom-width: 3em
+  border-bottom-style: solid
+  border-left: 1em solid transparent
+  height: 0
+  width: 0
+.ruleTitle
+  color: #ffffff
+  padding-left: inherit
+.paddingTop
+  padding-top: 0.5em
+.ruleInfo
+  white-space: nowrap
+  overflow: hidden
+  height: 6em
+.ruleBack
+  height: 6em
+  position: relative
+  top: -6em
+  background-color: #7496A4
+.ruleButtons
+  position: absolute
+  height: 100%
+  width: 80%
+.ruleButton
+  height: 100%
+@media #{$xsmall-only}
+  .ruleButtonStructure
+    min-height: 1px
+    background-repeat: no-repeat
+    background-size: auto 4em
+    background-position: center
+    background-color: #7496A4
+    border: 1px solid #000000
+  #enableRule
+    background-image: url("assets/enable.png")
+    background-position: 1em center
+    &:disabled
+      background-image: url("assets/enableActive.png")
+    &.enabled
+      background-image: url("assets/enableActive2green.png")
+  #deleteRule
+    background-position: .2em center
+    background-image: url('assets/deleteActive2red.png')
+@media #{$small-up}
+  .ruleButtonStructure
+    min-height: 1px
+    background-repeat: no-repeat
+    background-size: auto 5em
+    background-position: center
+    background-color: #7496A4
+    border: 1px solid #000000
+  #enableRule
+    background-image: url("assets/enable.png")
+    &:disabled
+      background-image: url("assets/enableActive.png")
+    &.enabled
+      background-image: url("assets/enableActive2green.png")
+  #deleteRule
+    background-image: url('assets/deleteActive2red.png')
+
+#scheduleRule
+  @extend .ruleButtonStructure
+  background-image: url("assets/schedule.png")
+  &:active
+    background-image: url("assets/scheduleActive2.png")
+#modifyRule
+  @extend .ruleButtonStructure
+  background-image: url("assets/modify.png")
+  &:active
+    background-image: url('assets/modifyActive2.png')
+.deleteRule_modal
+  background-color: #B7CBD3
+.deleteRule_modal_button-style
+  background-color:  #4dd0f5
+  width: 49%
+  margin: 0

@@ -1,0 +1,385 @@
+{
+  "allowAppInstallation": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow installing of apps"
+  },
+  "allowAssistant": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow Siri"
+  },
+  "allowAssistantWhileLocked": {
+    "minium_ios_version": 5.1,
+    "default_value": true,
+    "label": "Allow Siri while device locked",
+    "parent": "allowAssistant"
+  },
+  "allowCamera": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow use of camera"
+  },
+  "allowVideoConferencing": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow FaceTime",
+    "parent": "allowCamera"
+  },
+  "allowChat": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow use of iMessage",
+    "requires_supervised_device": true
+  },
+  "allowDiagnosticSubmission": {
+    "minium_ios_version": 6,
+    "default_value": true,
+    "label": "Allow reporting of diagnostic information to Apple"
+  },
+  "allowExplicitContent": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow explicit content"
+  },
+  "allowGameCenter": {
+    "minium_ios_version": 6,
+    "default_value": true,
+    "label": "Allow Game Center",
+    "requires_supervised_device": true
+  },
+  "allowAddingGameCenterFriends": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow adding Game Center friends",
+    "parent": "allowGameCenter"
+  },
+  "allowMultiplayerGaming": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow multiplayer gaming",
+    "parent": "allowGameCenter"
+  },
+  "allowScreenShot": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow screen shot"
+  },
+  "allowYouTube": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow use of YouTube"
+  },
+  "allowiTunes": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow use of iTunes Music Store"
+  },
+  "forceITunesStorePasswordEntry": {
+    "minium_ios_version": 5,
+    "default_value": false,
+    "label": "Require iTunes password for all purchases"
+  },
+  "allowSafari": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow use of Safari"
+  },
+  "allowUntrustedTLSPrompt": {
+    "minium_ios_version": 5,
+    "default_value": true,
+    "label": "Allow accepting of untrusted TLS certificates"
+  },
+  "allowCloudBackup": {
+    "minium_ios_version": 5,
+    "default_value": true,
+    "label": "Allow iCloud backup"
+  },
+  "allowCloudDocumentSync": {
+    "minium_ios_version": 5,
+    "default_value": true,
+    "label": "Allow iCloud document syncing"
+  },
+  "allowCloudKeychainSync": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow keychain syncing to iCloud"
+  },
+  "allowPhotoStream": {
+    "minium_ios_version": 5,
+    "default_value": true,
+    "label": "Allow Photo Stream (disallowing can cause data loss)"
+  },
+  "allowBookstore": {
+    "minium_ios_version": 6,
+    "default_value": true,
+    "label": "Allow iBookstore",
+    "requires_supervised_device": true
+  },
+  "allowBookstoreErotica": {
+    "minium_ios_version": 6,
+    "default_value": true,
+    "label": "Allow Erotica",
+    "parent": "allowBookstore"
+  },
+  "allowPassbookWhileLocked": {
+    "minium_ios_version": 6,
+    "default_value": true,
+    "label": "Allow Passbook while locked"
+  },
+  "allowSharedStream": {
+    "minium_ios_version": 6,
+    "default_value": true,
+    "label": "Allow shared photo streams"
+  },
+  "allowUIConfigurationProfileInstallation": {
+    "minium_ios_version": 6,
+    "default_value": true,
+    "label": "Allow installation of configuration profiles",
+    "requires_supervised_device": true
+  },
+  "allowGlobalBackgroundFetchWhenRoaming": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow background fetch while roaming"
+  },
+  "allowInAppPurchases": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow in-app purchases"
+  },
+  "allowVoiceDialing": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow voice dialing"
+  },
+  "forceEncryptedBackup": {
+    "minium_ios_version": null,
+    "default_value": false,
+    "label": "Force encrypted backups"
+  },
+  "ratingApps": {
+    "minium_ios_version": null,
+    "default_value": 1000,
+    "label": "Allow app ratings",
+    "possible_values": [
+      [
+        "4+",
+        100
+      ],
+      [
+        "9+",
+        200
+      ],
+      [
+        "12+",
+        300
+      ],
+      [
+        "17+",
+        600
+      ],
+      [
+        "All apps",
+        1000
+      ]
+    ]
+  },
+  "ratingMovies": {
+    "minium_ios_version": null,
+    "default_value": 1000,
+    "label": "Allow movie ratings",
+    "possible_values": [
+      [
+        "G",
+        100
+      ],
+      [
+        "PG",
+        200
+      ],
+      [
+        "PG-13",
+        300
+      ],
+      [
+        "R",
+        400
+      ],
+      [
+        "NC-17",
+        500
+      ],
+      [
+        "All movies",
+        1000
+      ]
+    ]
+  },
+  "ratingRegion": {
+    "minium_ios_version": null,
+    "default_value": "us",
+    "label": "Rating region",
+    "possible_values": [
+      [
+        "United States",
+        "us"
+      ]
+    ]
+  },
+  "ratingTVShows": {
+    "minium_ios_version": null,
+    "default_value": 1000,
+    "label": "Allow TV show ratings",
+    "possible_values": [
+      [
+        "TV-Y",
+        100
+      ],
+      [
+        "TV-Y7",
+        200
+      ],
+      [
+        "TV-G",
+        300
+      ],
+      [
+        "TV-PG",
+        400
+      ],
+      [
+        "TV-14",
+        500
+      ],
+      [
+        "TV-MA",
+        600
+      ],
+      [
+        "All TV shows",
+        1000
+      ]
+    ]
+  },
+  "safariAcceptCookies": {
+    "minium_ios_version": null,
+    "default_value": 2,
+    "label": "Accept cookies",
+    "possible_values": [
+      [
+        "Always",
+        2
+      ],
+      [
+        "From visited sites",
+        1
+      ],
+      [
+        "Never",
+        0
+      ]
+    ],
+    "parent": "allowSafari"
+  },
+  "safariAllowAutoFill": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow autofill",
+    "parent": "allowSafari"
+  },
+  "safariAllowJavaScript": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow javascript",
+    "parent": "allowSafari"
+  },
+  "safariAllowPopups": {
+    "minium_ios_version": null,
+    "default_value": true,
+    "label": "Allow popups",
+    "parent": "allowSafari"
+  },
+  "safariForceFraudWarning": {
+    "minium_ios_version": null,
+    "default_value": false,
+    "label": "Force fraud warning",
+    "parent": "allowSafari"
+  },
+  "allowAccountModification": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow account modification",
+    "requires_supervised_device": true
+  },
+  "allowAirDrop": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow AirDrop",
+    "requires_supervised_device": true
+  },
+  "allowAssistantUserGeneratedContent": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow Siri to query user-generated content from the web",
+    "requires_supervised_device": true
+  },
+  "allowAppCellularDataModification": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow changes to cellular data usage settings",
+    "requires_supervised_device": true
+  },
+  "allowFindMyFriendsModification": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow find my friends modification",
+    "requires_supervised_device": true
+  },
+  "allowFingerprintForUnlock": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow Touch ID to unlock the device"
+  },
+  "allowHostPairing": {
+    "minium_ios_version": 7,
+    "default_value": false,
+    "label": "Allow pairing with hosts other than the supervision host",
+    "requires_supervised_device": true
+  },
+  "allowLockScreenControlCenter": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow Control Center access from the lock screen"
+  },
+  "allowLockScreenNotificationsView": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow Notifications view in Notification Center on the lock screen"
+  },
+  "allowLockScreenTodayView": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow Today view in Notification Center on the lock screen"
+  },
+  "allowOpenFromManagedToUnmanaged": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow documents in managed apps and accounts to open in unmanaged apps and accounts"
+  },
+  "allowOpenFromUnmanagedToManaged": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow documents in unmanaged apps and accounts to open in managed apps and accounts"
+  },
+  "allowOTAPKIUpdates": {
+    "minium_ios_version": 7,
+    "default_value": true,
+    "label": "Allow over-the-air PKI updates"
+  },
+  "forceLimitAdTracking": {
+    "minium_ios_version": 7,
+    "default_value": false,
+    "label": "Force limited ad-tracking"
+  }
+}

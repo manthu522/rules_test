@@ -1,0 +1,64 @@
+::-webkit-scrollbar
+  display: none
+
+.topBarStructure
+  white-space: nowrap
+  overflow: hidden
+  color: white
+  border-radius: 0.7em 0.7em 0 0
+.title
+  @extend .topBarStructure
+  background-color: #274153
+  &.disabled
+    color: #446677
+    background-color: #7496A4
+.newRule
+  @extend .topBarStructure
+  background-color: #274153
+  &.disabled
+    color: #446677
+    background-color: #7496A4
+.newRule > img
+  height: 1.8em
+  padding-right: 5%
+  padding-bottom: 2%
+.bar
+  min-width: 1px
+  width: 100%
+  background-color: #274153
+  height: 10px
+  position: relative
+  top: 89%
+body
+  background-color: #B7CBD3
+  max-width: 1024px,
+  min-width: 320px,
+  height: 100%
+h1, h2, h3, h4, h5, h6
+  font-family: 'Lato', sans-serif
+.tab-bar
+  background-color: #7496A4
+.loginSignUp--landing
+  background: #B7CBD3 url(assets/landing.png) no-repeat top left
+  background-size: 100% auto
+.loginSignUp--Margin
+  margin-top: 70% !important
+.loginSignUp_button-style
+  background: #243C50
+.leftMenu_button-style
+  margin-bottom: 0
+  border-bottom: 1px solid black
+  background: #4DD0F5
+.leftMenu_ul--removeMargin
+  margin: 0
+
+@import modules/cuRule/cuRule
+@import modules/cuRule/switch
+@import modules/login/login
+@import modules/myRules/myRules
+@import modules/myRules/thisUser
+@import modules/provisions/provisions
+@import modules/rule/rule
+@import modules/schedule/schedule
+@import modules/signup/signup
+

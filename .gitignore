@@ -1,0 +1,7 @@
+master/
+.idea/
+.sass-cache
+**/*.DS_Store
+node_modules/*
+old/
+**/*.swp

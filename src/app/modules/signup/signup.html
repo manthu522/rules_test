@@ -1,0 +1,64 @@
+<div>
+    <div class="row loginSignUp--landing">
+        <form name="signUpForm" ng-submit="signUp(signUpForm, user)">
+            <div class="loginSignUp--Margin row">
+                <div class="small-10 small-centered column">
+                    <label> Email
+                        <input
+                                type="email"
+                                name="email"
+                                placeholder="email"
+                                ng-model="user.email"
+                                required
+                                autofocus
+                                mongoose-error
+                                />
+                    </label>
+                    <small class="error" ng-show="errors.email">{{errors.email}}</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-10 small-centered column">
+                    <label>Username
+                        <input
+                                type="text"
+                                name="username"
+                                placeholder="username"
+                                ng-model="user.username"
+                                required
+                                mongoose-error
+                                />
+                    </label>
+                    <small class="error" ng-show="errors.username">{{errors.username}}</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-10 small-centered column">
+                    <label> Password
+                        <input
+                                type="password"
+                                name="password"
+                                placeholder="password"
+                                ng-model="user.password"
+                                ng-minlength="5"
+                                required
+                                mongoose-error
+                                />
+                    </label>
+                    <small class="error" ng-show="errors.password">{{errors.password}}</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-10 small-centered column">
+                    <button type="submit" class="button expand loginSignUp_button-style">Sign Up</button>
+                    <small>Already have an account? <a href="/login" class="text-center">LOGIN</a><small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-10 small-centered column">
+                    <small class="error" ng-show="errors.other">{{errors.other}}</small>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

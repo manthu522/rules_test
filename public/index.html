@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html ng-app="phoneRules" class="row">
+<head lang="en">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900italic' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <base href="/">
+    <style>
+        [ng-cloak] {
+            display: none !important;
+        }
+        [ng-cloak]#splash {
+            display: block !important;
+        }
+        [ng-cloak]#main {
+            display: none
+        }
+        #splash {
+            background-color: #b7cbd3
+            height: 100%:
+            width : 100%;
+            min-height: 1px;
+            color: white;
+            display: none;
+        }
+        #main {
+            display: block;
+        }
+    </style>
+    <title>Phone Rules</title>
+    <!-- inject:vendor:css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/src/loading-bar.css">
+    <link rel="stylesheet" href="bower_components/css-toggle-switch/dist/toggle-switch.css">
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="foundation-icons.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- endinject -->
+</head>
+<body class="small-12 small-centered column" ng-controller="appController">
+<div id="splash" ng-cloak>
+    Loading...
+</div>
+    <div id="main" class="row" ng-cloak>
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap">
+
+                <nav class="tab-bar" ng-hide="atRules">
+                    <div class="small-2 column left-off-canvas-toggle">
+                        <span><i class="fi-list" style="font-size: 30px"></i></span>
+                    </div>
+                    <div class="small-4 column title"
+                          ng-class="atNewRules? 'disabled': ''"
+                          ng-click="atRules?'': myRules();">
+                        MY RULES
+                    </div>
+                    <div class="small-5 column text-right newRule"
+                          ng-class="atNewRules?'':'disabled'"
+                          ng-hide="atRules"
+                          ng-click="newRule()">
+                        <img ng-src="assets/addBtn.png" />NEW RULE
+                    </div>
+                    <div class="bar"></div>
+                </nav>
+
+                <section class="left-off-canvas-menu">
+                    <ul class="leftMenu_ul--removeMargin">
+                        <li class="" ng-click="logout()">
+                            <a class="exit-off-canvas" style="position: inherit">
+                            <div class="button expand leftMenu_button-style">
+                                LOGOUT
+                            </div></a>
+                        </li>
+                        <li>
+                            <div class="button expand leftMenu_button-style"
+                                ng-hide="scepRes"
+                                 ng-click="enrollDevice()">
+                                ENROLL DEVICE
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="main-section small-12 column">
+                    <ui-view class=""></ui-view>
+                </section>
+                <a class="exit-off-canvas"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- inject:vendor:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-mm-foundation/dist/mm-foundation-custom-0.2.1.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ps-input-time/ps-input-time.js"></script>
+    <script src="bower_components/angular-timer/dist/angular-timer.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/foundation/js/foundation.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="templates.js"></script>
+    <script src="foundationTemplates.js"></script>
+    <script src="app.js"></script>
+    <!-- endinject -->
+    <script ng-src="https://scep.appblade.com/device.js?callback=getScepResponse"></script>
+</body>
+</html>

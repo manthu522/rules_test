@@ -1,0 +1,9 @@
+<div class="button-group dayButtons">
+    <div class="column day"
+            ng-repeat="day in dayKey"
+            ng-model="days[day]"
+            ng-class="{'disabled': !days[day], 'end': $last}"
+            btn-checkbox>
+        <b>{{day|firstLetter}}</b>
+    </div>
+</div>
